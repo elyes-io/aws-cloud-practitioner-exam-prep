@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Certified Cloud Practitioner - Complete Study Guide</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>AWS Certified Cloud Practitioner</h1>
+            <p>Complete Study Guide for Exam CLF-C02</p>
+        </div>
+    </header>
+    
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul class="toc">
+            <li><a href="#introduction">Introduction & Exam Overview</a></li>
+            <li><a href="#domain1">Domain 1: Cloud Concepts</a></li>
+            <li><a href="#domain2">Domain 2: Security and Compliance</a></li>
+            <li><a href="#domain3">Domain 3: Technology</a></li>
+            <li><a href="#domain4">Domain 4: Billing and Pricing</a></li>
+            <li><a href="#core-services">Core AWS Services</a></li>
+            <li><a href="#exam-tips">Exam Preparation Tips</a></li>
+            <li><a href="#practice">Practice Questions</a></li>
+        </ul>
+    </nav>
+    
+    <section id="introduction">
+        <h2>Introduction & Exam Overview</h2>
+        <p>The AWS Certified Cloud Practitioner (CLF-C02) is designed for individuals who have knowledge of the AWS Cloud, regardless of their specific technical roles. This certification validates a candidate's ability to:</p>
+        <ul>
+            <li>Define what the AWS Cloud is and its basic global infrastructure</li>
+            <li>Describe basic AWS Cloud architectural principles</li>
+            <li>Describe the AWS Cloud value proposition</li>
+            <li>Describe key services on the AWS platform and their common use cases</li>
+            <li>Describe basic security and compliance aspects of the AWS platform and the shared security model</li>
+            <li>Define the billing, account management, and pricing models</li>
+        </ul>
+        
+        <h3>Exam Details</h3>
+        <ul>
+            <li><strong>Exam Name:</strong> AWS Certified Cloud Practitioner (CLF-C02)</li>
+            <li><strong>Duration:</strong> 90 minutes</li>
+            <li><strong>Questions:</strong> 65 questions (multiple choice and multiple response)</li>
+            <li><strong>Passing Score:</strong> 700/1000</li>
+            <li><strong>Cost:</strong> $100 USD</li>
+            <li><strong>Languages:</strong> English, Japanese, Korean, and Simplified Chinese</li>
+        </ul>
+        
+        <h3>Exam Domains</h3>
+        <table>
+            <tr>
+                <th>Domain</th>
+                <th>% of Exam</th>
+            </tr>
+            <tr>
+                <td>Domain 1: Cloud Concepts</td>
+                <td>24%</td>
+            </tr>
+            <tr>
+                <td>Domain 2: Security and Compliance</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Domain 3: Technology</td>
+                <td>34%</td>
+            </tr>
+            <tr>
+                <td>Domain 4: Billing and Pricing</td>
+                <td>12%</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="domain1">
+        <h2>Domain 1: Cloud Concepts (24%)</h2>
+        
+        <h3>What is Cloud Computing?</h3>
+        <p>Cloud computing is the on-demand delivery of compute power, database, storage, applications, and other IT resources through a cloud services platform via the internet with pay-as-you-go pricing.</p>
+        
+        <h3>Six Advantages of Cloud Computing</h3>
+        <ol>
+            <li><strong>Trade capital expense for variable expense</strong> - Instead of having to invest heavily in data centers and servers before you know how you're going to use them, you can pay only when you consume computing resources.</li>
+            <li><strong>Benefit from massive economies of scale</strong> - By using cloud computing, you can achieve a lower variable cost than you can get on your own.</li>
+            <li><strong>Stop guessing capacity</strong> - Eliminate guessing on your infrastructure capacity needs. When you make a capacity decision prior to deploying an application, you often end up either sitting on expensive idle resources or dealing with limited capacity.</li>
+            <li><strong>Increase speed and agility</strong> - In a cloud computing environment, new IT resources are only a click away, which means you reduce the time to make those resources available to your developers from weeks to just minutes.</li>
+            <li><strong>Stop spending money running and maintaining data centers</strong> - Focus on projects that differentiate your business, not the infrastructure.</li>
+            <li><strong>Go global in minutes</strong> - Easily deploy your application in multiple regions around the world with just a few clicks.</li>
+        </ol>
+        
+        <h3>Types of Cloud Computing</h3>
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>Infrastructure as a Service (IaaS)</h4>
+                <p>Contains the basic building blocks for cloud IT. Provides access to networking features, computers (virtual or on dedicated hardware), and data storage space.</p>
+                <p><strong>Examples:</strong> Amazon EC2, Azure VMs, Google Compute Engine</p>
+            </div>
+            <div class="service-card">
+                <h4>Platform as a Service (PaaS)</h4>
+                <p>Removes the need for organizations to manage the underlying infrastructure. Focus on the deployment and management of your applications.</p>
+                <p><strong>Examples:</strong> AWS Elastic Beanstalk, Azure App Services, Google App Engine</p>
+            </div>
+            <div class="service-card">
+                <h4>Software as a Service (SaaS)</h4>
+                <p>Provides you with a completed product that is run and managed by the service provider.</p>
+                <p><strong>Examples:</strong> AWS WorkMail, Microsoft Office 365, Google G Suite</p>
+            </div>
+        </div>
+        
+        <h3>Cloud Deployment Models</h3>
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>Public Cloud</h4>
+                <p>A cloud environment owned and operated by a third-party cloud service provider, which delivers their computing resources like servers and storage over the Internet.</p>
+                <p><strong>Examples:</strong> AWS, Microsoft Azure, Google Cloud Platform</p>
+            </div>
+            <div class="service-card">
+                <h4>Private Cloud</h4>
+                <p>Cloud computing resources used exclusively by a single business or organization. A private cloud can be physically located at your organization's on-site data center, or it can be hosted by a third-party service provider.</p>
+                <p><strong>Examples:</strong> VMware Cloud, OpenStack</p>
+            </div>
+            <div class="service-card">
+                <h4>Hybrid Cloud</h4>
+                <p>Computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them.</p>
+                <p><strong>Examples:</strong> AWS Outposts, Azure Arc, Google Anthos</p>
+            </div>
+        </div>
+        
+        <h3>AWS Global Infrastructure</h3>
+        <p>AWS builds its infrastructure in a way that provides high availability and fault tolerance while also allowing for global scalability.</p>
+        
+        <h4>Regions</h4>
+        <p>A physical location in the world where AWS clusters data centers. Each group of logical data centers is called an Availability Zone (AZ). Each AWS Region consists of multiple, isolated, and physically separate AZs within a geographic area.</p>
+        
+        <div class="highlight">
+            <p><strong>Key Points About Regions:</strong></p>
+            <ul>
+                <li>Each region is completely independent</li>
+                <li>Each region has at least 2 AZs</li>
+                <li>Not all AWS services are available in all regions</li>
+                <li>AWS largest region is US-EAST (N. Virginia)</li>
+            </ul>
+        </div>
+        
+        <h4>Availability Zones (AZs)</h4>
+        <p>An AZ is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region. AZs are physically separated by a meaningful distance (miles) from any other AZ, although all are within 60 miles (100 km) of each other.</p>
+        
+        <h4>Edge Locations</h4>
+        <p>Edge locations are sites that Amazon CloudFront uses to cache copies of content for faster delivery to users. They're separate from Regions and AZs and are typically deployed in major cities and highly populated areas.</p>
+        
+        <h3>Well-Architected Framework</h3>
+        <p>The AWS Well-Architected Framework helps cloud architects build secure, high-performing, resilient, and efficient infrastructure for their applications and workloads. It's based on six pillars:</p>
+        
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>Operational Excellence</h4>
+                <p>The ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.</p>
+            </div>
+            <div class="service-card">
+                <h4>Security</h4>
+                <p>The ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.</p>
+            </div>
+            <div class="service-card">
+                <h4>Reliability</h4>
+                <p>The ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions.</p>
+            </div>
+            <div class="service-card">
+                <h4>Performance Efficiency</h4>
+                <p>The ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.</p>
+            </div>
+            <div class="service-card">
+                <h4>Cost Optimization</h4>
+                <p>The ability to run systems to deliver business value at the lowest price point.</p>
+            </div>
+            <div class="service-card">
+                <h4>Sustainability</h4>
+                <p>The ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="domain2">
+        <h2>Domain 2: Security and Compliance (30%)</h2>
+        
+        <h3>Shared Responsibility Model</h3>
+        <p>Security and compliance are shared responsibilities between AWS and the customer. AWS is responsible for "security of the cloud" (infrastructure), while customers are responsible for "security in the cloud" (data and configurations).</p>
+        
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>AWS Responsibilities</h4>
+                <ul>
+                    <li>Physical security of data centers</li>
+                    <li>Hardware and infrastructure</li>
+                    <li>Network infrastructure</li>
+                    <li>Virtualization infrastructure</li>
+                    <li>Software for managed services</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h4>Customer Responsibilities</h4>
+                <ul>
+                    <li>Data encryption</li>
+                    <li>Network traffic protection</li>
+                    <li>Operating system, network, and firewall configuration</li>
+                    <li>Identity and access management</li>
+                    <li>Customer data</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="highlight important">
+            <p><strong>Important:</strong> The shared responsibility model shifts depending on the service. For example:</p>
+            <ul>
+                <li>For EC2, AWS manages the infrastructure, and customers manage the OS and applications</li>
+                <li>For RDS, AWS manages the infrastructure and the database software</li>
+                <li>For Lambda, AWS manages everything except the code and access controls</li>
+            </ul>
+        </div>
+        
+        <h3>AWS Identity and Access Management (IAM)</h3>
+        <p>IAM is a web service that helps you securely control access to AWS resources. It enables you to create and manage AWS users and groups, and use permissions to allow or deny their access to AWS resources.</p>
+        
+        <h4>Key IAM Concepts</h4>
+        <ul>
+            <li><strong>Users</strong> - Individuals who interact with AWS resources</li>
+            <li><strong>Groups</strong> - Collections of users with shared permissions</li>
+            <li><strong>Roles</strong> - Sets of permissions that can be assumed by users, applications, or services</li>
+            <li><strong>Policies</strong> - Documents that define permissions (written in JSON)</li>
+        </ul>
+        
+        <h4>IAM Best Practices</h4>
+        <ul>
+            <li>Lock away your AWS account root user access keys</li>
+            <li>Use IAM roles for applications that run on EC2 instances</li>
+            <li>Grant least privilege</li>
+            <li>Enable MFA for privileged users</li>
+            <li>Use policy conditions for extra security</li>
+            <li>Rotate credentials regularly</li>
+        </ul>
+        
+        <h3>AWS Security Services</h3>
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>AWS WAF</h4>
+                <p>Web Application Firewall that helps protect web applications from common web exploits.</p>
+            </div>
+            <div class="service-card">
+                <h4>AWS Shield</h4>
+                <p>Managed DDoS protection service that safeguards applications running on AWS.</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon GuardDuty</h4>
+                <p>Threat detection service that continuously monitors for malicious activity and unauthorized behavior.</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon Inspector</h4>
+                <p>Automated security assessment service that helps improve the security and compliance of applications.</p>
+            </div>
+            <div class="service-card">
+                <h4>AWS KMS</h4>
+                <p>Key Management Service that makes it easy to create and manage cryptographic keys.</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon Macie</h4>
+                <p>Security service that uses machine learning to automatically discover, classify, and protect sensitive data.</p>
+            </div>
+            <div class="service-card">
+                <h4>AWS Secrets Manager</h4>
+                <p>Service that helps you protect secrets needed to access your applications, services, and IT resources.</p>
+            </div>
+            <div class="service-card">
+                <h4>AWS Security Hub</h4>
+                <p>Comprehensive view of your security state within AWS that helps you check your compliance with security standards.</p>
+            </div>
+        </div>
+        
+        <h3>Compliance Programs</h3>
+        <p>AWS provides customers with information about its security and compliance programs through:</p>
+        <ul>
+            <li><strong>AWS Artifact</strong> - No-cost, self-service portal for on-demand access to AWS' compliance reports</li>
+            <li><strong>Compliance certifications and attestations</strong> - Third-party validation of the security, compliance, and risk controls of AWS infrastructure</li>
+        </ul>
+        
+        <h4>Key Compliance Programs and Certifications</h4>
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>PCI DSS</h4>
+                <p>Payment Card Industry Data Security Standard</p>
+            </div>
+            <div class="service-card">
+                <h4>HIPAA</h4>
+                <p>Health Insurance Portability and Accountability Act</p>
+            </div>
+            <div class="service-card">
+                <h4>SOC 1, 2, 3</h4>
+                <p>Service Organization Control reports</p>
+            </div>
+            <div class="service-card">
+                <h4>ISO/IEC 27001</h4>
+                <p>Information security management system (ISMS) standard</p>
+            </div>
+            <div class="service-card">
+                <h4>FedRAMP</h4>
+                <p>Federal Risk and Authorization Management Program</p>
+            </div>
+            <div class="service-card">
+                <h4>GDPR</h4>
+                <p>General Data Protection Regulation</p>
+            </div>
+        </div>
+        
+        <h3>Data Protection</h3>
+        <p>AWS provides several tools and features to enable customers to protect their data:</p>
+        <ul>
+            <li><strong>Encryption at rest and in transit</strong> - AWS services offer encryption features to protect sensitive data</li>
+            <li><strong>Data backup and recovery</strong> - Solutions to help back up data and recover in the event of a disaster</li>
+            <li><strong>Data residency</strong> - AWS allows customers to select the geographic location where their data will be stored</li>
+        </ul>
+    </section>
+    
+    <section id="domain3">
+        <h2>Domain 3: Technology (34%)</h2>
+        
+        <h3>Compute Services</h3>
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>Amazon EC2</h4>
+                <p>Elastic Compute Cloud provides resizable compute capacity in the cloud as virtual machines.</p>
+                <p><strong>Use cases:</strong> Web hosting, application hosting, development environments</p>
+            </div>
+            <div class="service-card">
+                <h4>AWS Lambda</h4>
+                <p>Serverless compute service that lets you run code without provisioning or managing servers.</p>
+                <p><strong>Use cases:</strong> Real-time file processing, data validation, backend APIs</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon ECS</h4>
+                <p>Elastic Container Service is a highly scalable, high-performance container orchestration service.</p>
+                <p><strong>Use cases:</strong> Microservices, batch processing, application scaling</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon EKS</h4>
+                <p>Elastic Kubernetes Service makes it easy to deploy, manage, and scale containerized applications using Kubernetes.</p>
+                <p><strong>Use cases:</strong> Running Kubernetes applications, hybrid deployments</p>
+            </div>
+            <div class="service-card">
+                <h4>AWS Elastic Beanstalk</h4>
+                <p>Service for deploying and scaling web applications developed in popular languages.</p>
+                <p><strong>Use cases:</strong> Web applications, developer environments</p>
+            </div>
+        </div>
+        
+        <h3>Storage Services</h3>
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>Amazon S3</h4>
+                <p>Simple Storage Service offers object storage with high durability, availability, and scalability.</p>
+                <p><strong>Use cases:</strong> Static website hosting, backup and restore, data lakes</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon EBS</h4>
+                <p>Elastic Block Store provides persistent block storage volumes for EC2 instances.</p>
+                <p><strong>Use cases:</strong> Boot volumes, database storage, enterprise applications</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon EFS</h4>
+                <p>Elastic File System provides serverless, fully elastic file storage for use with AWS Cloud services and on-premises resources.</p>
+                <p><strong>Use cases:</strong> Content management, web serving, data sharing</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon S3 Glacier</h4>
+                <p>Low-cost archive storage service for data archiving and long-term backup.</p>
+                <p><strong>Use cases:</strong> Long-term backups, compliance archives, digital preservation</p>
+            </div>
+            <div class="service-card">
+                <h4>AWS Storage Gateway</h4>
+                <p>Hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage.</p>
+                <p><strong>Use cases:</strong> Moving backups to the cloud, low-latency access to data</p>
+            </div>
+            <div class="service-card">
+                <h4>AWS Snow Family</h4>
+                <p>Physical devices that help migrate large amounts of data into and out of AWS.</p>
+                <p><strong>Use cases:</strong> Large data migration, edge computing, data transfer in environments with limited connectivity</p>
+            </div>
+        </div>
+        
+        <h3>Database Services</h3>
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>Amazon RDS</h4>
+                <p>Relational Database Service makes it easy to set up, operate, and scale a relational database in the cloud.</p>
+                <p><strong>Supported engines:</strong> MySQL, PostgreSQL, MariaDB, Oracle, SQL Server, Aurora</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon DynamoDB</h4>
+                <p>Fast and flexible NoSQL database service for single-digit millisecond performance at any scale.</p>
+                <p><strong>Use cases:</strong> Mobile apps, gaming, IoT applications</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon Aurora</h4>
+                <p>MySQL and PostgreSQL-compatible relational database built for the cloud with up to 5x better performance.</p>
+                <p><strong>Use cases:</strong> Enterprise applications, SaaS applications</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon Redshift</h4>
+                <p>Fast, fully managed data warehouse service that makes it simple to analyze data using standard SQL.</p>
+                <p><strong>Use cases:</strong> Business intelligence, big data processing</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon ElastiCache</h4>
+                <p>In-memory data store and cache to improve the performance of web applications.</p>
+                <p><strong>Supported engines:</strong> Redis, Memcached</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon Neptune</h4>
+                <p>Fast, reliable graph database service for applications that work with highly connected datasets.</p>
+                <p><strong>Use cases:</strong> Social networks, recommendation engines, fraud detection</p>
+            </div>
+        </div>
+        
+        <h3>Networking Services</h3>
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>Amazon VPC</h4>
+                <p>Virtual Private Cloud lets you provision a logically isolated section of the AWS Cloud.</p>
+                <p><strong>Key components:</strong> Subnets, Route Tables, Internet Gateways, Security Groups, NACLs</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon Route 53</h4>
+                <p>Scalable domain name system (DNS) web service designed to route users to applications.</p>
+                <p><strong>Routing policies:</strong> Simple, Weighted, Latency-based, Failover, Geolocation</p>
+            </div>
+            <div class="service-card">
+                <h4>Amazon CloudFront</h4>
+                <p>Content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally.</p>
+                <p><strong>Use cases:</strong> Static website hosting, live & on-demand streaming, security</p>
+            </div>
+            <div class="service-card">
+                <h4>AWS Direct Connect</h4>
+                <p>Dedicated network connection from your premises to AWS.</p>
+                <p><strong>Benefits:</strong> Reduced bandwidth costs, consistent network experience, private connectivity</p>
+            </div>
+            <div class="service-card">
+                <h4>Elastic Load Balancing</h4>
+                <p>Automatically distributes incoming application traffic across multiple targets.</p>
+                <p><strong>Types:</strong> Application Load Balancer (ALB), Network Load Balancer (NLB), Gateway Load Balancer (GWLB)</p
